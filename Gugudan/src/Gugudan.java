@@ -5,9 +5,19 @@ public class Gugudan {
         Scanner scan = new Scanner(System.in);
         System.out.printf("Put number : ");
         int n = scan.nextInt();
-        System.out.println("------Result------");
-        for(int i=0; i<9; i++)
-            System.out.printf("%d * %d = %d\n", n, i+1, (i+1)*n);
+        if(n == 0) {
+            System.out.println("------Result------");
+        	for(int i=1; i<10; i++) {
+        		for(int j=2; j<10; j++) {
+                    System.out.printf("%d * %d = %d	", j, i, i*j);        			
+        		}
+        		System.out.printf("\n");
+        	}
+        }else {
+            System.out.println("------Result------");
+            for(int i=0; i<9; i++)
+                System.out.printf("%d * %d = %d\n", n, i+1, (i+1)*n);
+        }
         scan.close();
     }
 }
