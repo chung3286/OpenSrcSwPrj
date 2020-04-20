@@ -21,6 +21,5 @@ public class Gugudan {
                 System.out.printf("%d * %d = %d\n", n, i+1, (i+1)*n);
         }
         scan.close();
-        System.out.println("Hello");
     }
 }
