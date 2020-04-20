@@ -6,7 +6,7 @@ public class Gugudan {
         System.out.printf("Put number : ");
         int n = scan.nextInt();
         if(n<0) {
-        	System.out.printf("¡Ø Cannot Operate ¡Ø");
+        	System.out.printf("Â¡Ã˜ Cannot Operate Â¡Ã˜");
         }else if(n == 0) {
             System.out.println("------Result------");
         	for(int i=1; i<10; i++) {
@@ -21,5 +21,6 @@ public class Gugudan {
                 System.out.printf("%d * %d = %d\n", n, i+1, (i+1)*n);
         }
         scan.close();
+        System.out.println("Hello");
     }
 }
